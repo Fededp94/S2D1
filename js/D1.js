@@ -77,7 +77,7 @@ let x = 12
 
 myName = "Di Presa"
 console.log(myName)
-const myName = "Di Presa" /** racchiudere questa variabile tra un commento per far funzionare gli esercizi sottostanti */
+/**const myName = "Di Presa" /** racchiudere questa variabile tra un commento per far funzionare gli esercizi sottostanti */
 console.log(myName) /* ora mi dà errore perchè myName è stata dichiarata precedentemente con un costrutto let
 
 /* ESERCIZIO 6
@@ -101,8 +101,11 @@ console.log("il risultato di x-y è: ", sottrazione)
 
 const name1 = "john"
 const name2 = "John"
-console.log(name1 === name2)
-/****** EXTRA ******/
+const uguaglianza = name1 !== name2? "Sì":"No"
+console.log("Sono diversi? ",uguaglianza)
+/****** OPPURE ******/
 console.log(name1 !== name2)
+/****** EXTRA ******/
+console.log(name1.toLocaleLowerCase() === name2.toLocaleLowerCase())
 
 
